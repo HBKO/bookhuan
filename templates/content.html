@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    background-image:
+    url(content.png);
+    background-color: #eaeaea;
+    background-repeat:no-repeat;
+    background-position: top center;
+    font-size: 2.3em;
+    text-align: center;
+    background-size:cover;
+}
+#title{
+    float: top;
+    font-size: 1.6em;
+    margin-top: 3%;
+    color:#324e55;
+    position: absolute;
+    top: 0;
+    left: 40%
+    }
+#imga{
+    position:absolute; 
+    left: 3%;
+    top: 1.2%;
+}
+#jiaoCai{
+    position:absolute; 
+    left: 38%;
+    top: 20%;
+}
+#duWu{
+    position:absolute; 
+    left: 38%;
+    top: 50%;
+}
+#individual{
+    position: absolute;
+    right:0%;
+    bottom: 0%;
+    
+}
+.bottom{
+    width: 50%;
+}
+#search{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+</style>
+</head>
+<body>
+    <div id="banner">
+    <img src="{{url_for('static',filename='banner.png',_external=True)}}" />
+    </div>
+    <div id="title">
+        <b>分　类</b>
+    </div>
+    <div id="imga">
+    <a href="sign.html">
+    <img border="0" src="{{url_for('static',filename='return.png',_external=True)}}" width="150%"/>
+    </a>
+    </div> 
+    <div id="jiaoCai">
+    <a href="sign.html">
+
+    <img src="{{url_for('static',filename='123.png',_external=True)}}" id="mouse" alt="" onmousedown="down1(this)" onmouseup="out1(this)" width="150%">
+    </a>
+    </div>
+    <div id="duWu">
+    <a href="sign.html">
+    <img src="{{url_for('static',filename='读物.png',_external=True)}}" id="mouse" alt="" onmousedown="down1(this)" onmouseup="out1(this)" width="150%">
+    </a>
+    </div>
+    <div class="bottom" id="individual">
+    <a href="individual.html">
+    <img border="0" src="{{url_for('static',filename='mine.png',_external=True)}}" width="100%"/>
+    </a>
+    </div>
+    <div class="bottom">
+    <img id="search" src="{{url_for('static',filename='findon.png',_external=True)}}" >
+    </div>
+    
+    
+<script>
+function down1(obj)
+{
+obj.src="教材on.png";
+}
+function out1(obj)
+{
+obj.src="教材.png"  
+}
+function dow2(obj)
+{
+obj.src="读物on.png";
+}
+function out2(obj)
+{
+obj.src="读物.png"  
+}
+</script>
+
+</body>
+    
